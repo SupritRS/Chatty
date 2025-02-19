@@ -20,7 +20,7 @@ const ChatHeader = () => {
   const startVideoCall = () => {
     if (!selectedUser || !onlineUsers.includes(selectedUser._id)) return;
 
-    window.VideoSDK.config("e65a23ec-91a1-482f-81fd-5e0a352c68b7");
+    window.VideoSDK.config("YOUR_VIDEOSDK_API_KEY");
     const newMeeting = window.VideoSDK.initMeeting({
       meetingId: "unique-meeting-id", // Generate dynamically if needed
       name: "Chat App", 
